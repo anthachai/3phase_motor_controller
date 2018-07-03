@@ -44,7 +44,7 @@ int PWM3 = 11; //PWM3 output, phase 3
 int offset_1; //offset 1 is 120 degrees out of phase with previous phase, Refer to PWM to sine.xls
 int offset_2; //offset 2 is 120 degrees out of phase with offset 1. Refer to PWM to sine.xls
 //int program_exec_time = A3; //monitor how quickly the interrupt trigger
-int ISR_exec_time = 12; //monitor how long the interrupt takes
+int ISR_exec_time = 2; //monitor how long the interrupt takes
 int INVERTOR_ENABLE = A1; //INVERTOR ENABLE
 
 double ad_cel; //Manat Add Motor Acceleration, Deceleration
@@ -58,7 +58,7 @@ int num = 0; // Manat Add for Hz Show 7-Segments
 
 const double refclk=31376.6;      // measured output frequency
 //----------------------------------------------------------------------------
-const int ledPin =  13;         // the number of the LED pin
+const int ledPin =  3;         // the number of the LED pin
 int ledState = LOW;             // ledState used to set the LED
 long previousMillis = 0;        // will store last time LED was updated
 long interval = 50000;           // interval at which to blink (milliseconds)
